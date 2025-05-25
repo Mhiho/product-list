@@ -7,6 +7,8 @@ Important note is that, I enhance the json data to data which should be in real 
 
 I was thinking about aproach you expecting about displaying photos, especialy when the url is broken. I decided to use fallback and placeholder for it to have the view more user friendly.
 
+Finally I was avoiding additional libraries to have native approach which is light more reliable.
+
 ## Technologies used
 
 - vite
