@@ -1,46 +1,17 @@
-# React + TypeScript + Vite
+# Product-list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App is fetching data from json -> /product-list.json
+As I was not expected to delete or create functionalities, but for my curiosity I was add ONLY add/remove image. I know that was not the setting of this task, but I was curios the challenge for my little additional task. I hope it will be not taken as a defect, but rather a bonus. And because it was succeded so I decided to keep the code with to have better view how to play with different source of images.
 
-Currently, two official plugins are available:
+Important note is that, I enhance the json data to data which should be in real production app. I add the id for each item, and then as a consequence I allowed the name to be editable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I was thinking about aproach you expecting about displaying photos, especialy when the url is broken. I decided to use placeholder for it to have the view more user friendly.
 
-## Expanding the ESLint configuration
+## Technologies used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    ...tseslint.configs.recommendedTypeChecked,
-    ...tseslint.configs.strictTypeChecked,
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config({
-  plugins: {
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+- vite
+- React
+- Redux (Redux toolkit)
+- TypeScript
+- Antd/Scss
+- Cypress

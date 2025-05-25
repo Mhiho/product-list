@@ -32,7 +32,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
           {product.number !== undefined ? product.number : "N/A"}
         </Paragraph>
         <div className="product-card-image-container">
-          {(product.images?.length ?? 0) > 0 ? (
+          {(product.images?.length ?? 0) > 0 &&
             (product.images ?? [])
               .filter(
                 (img) =>
@@ -52,10 +52,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
                     }}
                   />
                 );
-              })
-          ) : (
-            <img src={noImage} alt="No image" className="product-card-image" />
-          )}
+              })}
         </div>
       </Card>
     </div>
