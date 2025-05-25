@@ -15,7 +15,7 @@ const ProductDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const dispatch = useDispatch();
   const product = useSelector((state: RootState) =>
-    state.productList.products.find((product) => product.id === id)
+    state.productList.products.find((product) => product.id === id),
   );
 
   const [editMode, setEditMode] = useState(false);

@@ -37,7 +37,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
               .filter(
                 (img) =>
                   (typeof img === "string" && img) ||
-                  (typeof img === "object" && img.url)
+                  (typeof img === "object" && img.url),
               )
               .map((img, index) => {
                 const src = typeof img === "string" ? img : img.url;

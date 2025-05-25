@@ -17,7 +17,7 @@ const ProductDetailsForm: React.FC<Props> = ({
   onCancel,
 }) => {
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setForm({
@@ -36,7 +36,7 @@ const ProductDetailsForm: React.FC<Props> = ({
             reader.onloadend = () => resolve(reader.result as string);
             reader.onerror = reject;
             reader.readAsDataURL(file);
-          })
+          }),
       );
       Promise.all(readers).then((images) => {
         setForm({

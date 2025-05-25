@@ -29,7 +29,7 @@ const productListSlice = createSlice({
     },
     editProduct(state, action: PayloadAction<ProductItem>) {
       const index = state.products.findIndex(
-        (product) => product.id === action.payload.id
+        (product) => product.id === action.payload.id,
       );
       if (index !== -1) {
         state.products[index] = { ...state.products[index], ...action.payload };

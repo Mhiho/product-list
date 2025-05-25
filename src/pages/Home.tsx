@@ -9,7 +9,7 @@ const { Title } = Typography;
 
 const Home: React.FC = () => {
   const products = useSelector(
-    (state: RootState) => state.productList.products
+    (state: RootState) => state.productList.products,
   );
 
   return (

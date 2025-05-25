@@ -37,7 +37,7 @@ describe("Product List", () => {
     cy.contains("Edit").click();
     cy.get(".product-details-image-wrapper").should(
       "have.length.greaterThan",
-      1
+      1,
     );
     cy.get(".product-details-image-wrapper").first().find("button").click();
     cy.contains("Save").click();

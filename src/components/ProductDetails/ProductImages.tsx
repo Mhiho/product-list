@@ -23,7 +23,7 @@ const ProductImages: React.FC<Props> = ({
         .filter(
           (img) =>
             (typeof img === "string" && img) ||
-            (typeof img === "object" && img.url)
+            (typeof img === "object" && img.url),
         )
         .map((img, index) => {
           const src = typeof img === "string" ? img : img.url;
